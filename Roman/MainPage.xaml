@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Roman.MainPage"
+             Title = "Nvmervs Convertvs">
+<Grid>
+    <Image Source="rome.jpg"
+     Aspect="AspectFill"/>
+    <VerticalStackLayout>
+        
+        <Label Text="Enter either a number or Roman numeral" FontSize="Title" Padding="20,20" HorizontalOptions="Center"/>
+        <Frame  CornerRadius="5" Padding="0" HasShadow="True" Margin="5,20">
+            <Entry x:Name="txtPreConvert" Placeholder="Ex. 1,2,3/I,V,X" Margin="5" />
+        </Frame>
+        <Button Text="Convert" Margin="30" Clicked="Convert_OnClicked"/>
+        <Frame BorderColor="Black" CornerRadius="5" Padding="0" HasShadow="True" Margin="5,20">
+            <Label x:Name="lblPostConvert"  Margin="5" />
+        </Frame>
+        
+        
+    </VerticalStackLayout>
+    
+</Grid>
+</ContentPage>
